@@ -1,9 +1,9 @@
 import java.util.regex.*;
-//Rule No 1
+//Rule No 2
 public class Password {
    public static void main(String args[]) {
-      String password = "jdhuihjn";
-      String regex = "[a-z]{8}";
+      String password = "jdFuiOjn";
+      String regex = "[a-z A-Z]{8}";
       Pattern p = Pattern.compile(regex);
       Matcher m = p.matcher(password);
       System.out.println("The Password is: " + password);
