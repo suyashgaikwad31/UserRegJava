@@ -1,12 +1,12 @@
 import java.util.regex.*;
 
-public class LastName {
+public class EmailId {
    public static void main(String args[]) {
-      String lastname = "Gaikwad";
-      String regex = "^[A-Z]{1}[a-z]{3,}$";
+      String emailid = "abc.xyz@bl.co.in";
+      String regex = "[0-9 a-z A-z]+([._+-][0-9 a-z A-Z]+)*"+"@([0-9 a-z A-Z][-]?)+[.][a-z A-Z]{2,4}([.][a-z A-Z]{2,4})?$";
       Pattern p = Pattern.compile(regex);
-      Matcher m = p.matcher(lastname);
-      System.out.println("The Lastname is: " + lastname);
-      System.out.println("Is the Lastname valid? " + lastname.matches(regex));
+      Matcher m = p.matcher(emailid);
+      System.out.println("The EmailId is: " + emailid);
+      System.out.println("Is the EmailId valid? " + emailid.matches(regex));
    }
 }
