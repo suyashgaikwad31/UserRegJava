@@ -1,5 +1,5 @@
 import java.util.regex.*;
-//Rule No 3
+//Rule No 4
 public class Password {
    public static void main(String args[]) {
       String password = "Eyu6@uyh";
